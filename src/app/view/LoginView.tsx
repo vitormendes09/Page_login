@@ -3,7 +3,7 @@ import { Container, Typography, Paper } from "@mui/material";
 import {LoginForm} from "../components/LoginForm";
 import { useLoginController } from "../controller/LoginController";
 
-const LoginView: React.FC = () => {
+export const LoginView: React.FC = () => {
   const { formData, handleChange, handleSubmit } = useLoginController();
 
   return (
@@ -16,4 +16,3 @@ const LoginView: React.FC = () => {
   );
 };
 
-export default LoginView;
