@@ -1,7 +1,8 @@
+"use client"; 
 import {useState} from "react"
 import {LoginData} from "../contract/loginData"
 
-export const useLoginController = () => {
+export const LoginController = () => {
     const [formData, setFormData] = useState<LoginData>({
         name: "",
         age: 0,

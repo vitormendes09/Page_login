@@ -1,10 +1,11 @@
+'use client';
 import React from "react";
 import { Container, Typography, Paper } from "@mui/material";
 import {LoginForm} from "../components/LoginForm";
-import { useLoginController } from "../controller/LoginController";
+import { LoginController } from "../controller/LoginController";
 
 export const LoginView: React.FC = () => {
-  const { formData, handleChange, handleSubmit } = useLoginController();
+  const { formData, handleChange, handleSubmit } = LoginController();
 
   return (
     <Container maxWidth="sm">
